@@ -1,0 +1,120 @@
+/* ! -------------------------------- Modules -------------------------------- ! */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+@import url("gamemenu.css");
+@import url("gamepage.css");
+/* ! -------------------------------- Variables -------------------------------- ! */
+:root {
+    --dark-background-theme: #0e0e0e;
+    --darkvisible-background-theme: #0f0f0f;
+    --selection-color: #505050;
+    --pale-white-txt: #bdbdbd;
+    --text-theme: #ff4747;
+}
+/* ! -------------------------------- Containers -------------------------------- ! */
+.container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    width: 100vw;
+    min-height: 100vh;
+}
+/* .wrapper {
+  width: 75vw;
+  max-width: 75vw;
+  display: flex;
+}
+.item-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+} */
+/* ! -------------------------------- Custom Scrollbar -------------------------------- ! */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #424242;
+}
+::-webkit-scrollbar-thumb {
+    background: #2e2e2e;
+    border-radius: 5px;
+}
+/* ! -------------------------------- Rester -------------------------------- ! */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+*::selection {
+    background: var(--selection-color);
+}
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    user-select: none;
+}
+html,
+body {
+    width: 100%;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+html:focus-within {
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    width: 100%;
+}
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
