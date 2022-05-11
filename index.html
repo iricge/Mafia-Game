@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Mafia Game</title>
+      <link href="assest/style/style.css" rel="stylesheet" />
+      <!-- ! ------------------------------ Favicon ------------------------------ ! -->
+      <link rel="shortcut icon" type="image/jpg" href="resource/images/favicon/favicon.png"/>
+      <link href="assest/resource/images/favicon/Braingame-Favicon.png" rel="shortcut icon" />
+      <!-- ! ------------------------------ Google Font ------------------------------ ! -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+      <!-- ! ------------------------------ Libraries ------------------------------ ! -->
+      <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
+   </head>
+<div class="container">
+ <body>
+    <div class="menu-contianer">
+
+       <header class="gamemenuscreen-header" data-aos="zoom-in-down">
+              <div class="author-socials">
+                 <a href="https://www.linkedin.com/in/iricge/" target="_blank" class="authorsocials-linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                 <a href="https://github.com/iricge" target="_blank" class="authorsocials-github"><i class="fa-brands fa-github"></i></a>
+              </div>
+      </header>
+
+      <main> 
+        <section class="gamemenu">
+              <section class="gamemenu-btns">
+               <article class="gamemenu-userprofile">
+                  <div class="userprofile-details">
+                     <div class="userprofile-profilepicture">
+                       <img src="assest/resource/images/thumbnails/image.jpg" class="profile-picture" alt="Userprofile pictue">
+                       <input type="file" id="file" class="profilepicture-fileinput">
+                       <label for="file" class="profilepicture-uploadBtn">Choose Photo</label>
+                     </div>
+                     <h3 class="userprofile-username">Iric gorgi</h3>
+                  </div>
+                 </article>
+                 <button data-aos="fade-left" data-aos-delay="150" class="gamemenu-btn gamemenu-playbtn"><a href="assest/pages/gamepage.html">Play</a></button>
+                 <button data-aos="fade-left" data-aos-delay="250" class="gamemenu-btn gamemenu-playonlinebtn">Play Online</button>
+                 <button data-aos="fade-left" data-aos-delay="350" class="gamemenu-btn gamemenu-freindsbtn">Play with Freinds</button>
+                 <button data-aos="fade-left" data-aos-delay="450" class="gamemenu-btn gamemenu-cutomgamesbtn">Custom Game</button>
+                 <button data-aos="fade-left" data-aos-delay="550" class="gamemenu-btn gamemenu-gameguidesbtn"><a target="_blank" href="https://baziza.ir/mafia/">Game Guide</a></button>
+                 <button data-aos="fade-left" data-aos-delay="650" class="gamemenu-btn gamemenu-gameguidesbtn"><a target="_blank" href="https://baziza.ir/mafia/">Game Guide</a></button>
+                 <button data-aos="fade-left" data-aos-delay="750" class="gamemenu-btn gamemenu-Settingbtn"><a href="#">Setting</a></button>
+               </section>
+            </main>
+         </div> 
+      </div>
+
+         <!-- ! ------------------------------ Scripts ------------------------------ ! -->
+         <script src="assest/scripts/gamemenu.js"></script>
+         <script src="assest/scripts/uploadimage.js"></script>
+         <script src="https://kit.fontawesome.com/9c345a79fa.js" crossorigin="anonymous"></script>
+         <script src="node_modules/aos/dist/aos.js"></script>
+         <script>
+            AOS.init({
+              startEvent: 'DOMContentLoaded'
+            });
+         </script>
+      </body>
+   </div>
+</html>
