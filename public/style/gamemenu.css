@@ -1,3 +1,19 @@
+/* ! -------------------------------- Gamepage Menu Containers -------------------------------- ! */
+.gamemenu{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.gamemenu-btns{
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem;
+  border: 1px solid #f0f;
+  width: 25%;
+  height: 300px;
+}
 .gamemenu-userprofile img {
   width: 100%;
   height: 100%;
@@ -10,7 +26,7 @@
   width: 100%;
   position: absolute;
   bottom: 0;
-  left: 50%;
+  left:50%; 
   transform: translateX(-50%);
   text-align: center;
   background: rgba(0, 0, 0, 0.7);

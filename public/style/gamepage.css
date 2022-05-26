@@ -1,0 +1,262 @@
+/* ! -------------------------------- Map container -------------------------------- ! */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: min-content;
+    position: fixed;
+    background-color: #fff;
+}
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--dark-background-theme);
+}
+/* ! -------------------------------- Gamepage Explaintions -------------------------------- ! */
+.gameexplaintions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    z-index: 10;
+}
+.gameexpl-usernuminputform {
+    display: flex;
+    width: 100%;
+}
+.playeramountnum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: var(--pale-white-txt);
+    border: 2px solid var(--text-theme);
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.playeramountnum:focus {
+    padding: 10px;
+    background-color: #fff;
+    color: black;
+    border: 2px solid transparent;
+}
+.gameexpl-submitbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: var(--pale-white-txt);
+    border: 2px solid var(--text-theme);
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.gameexpl-submitbtn:hover {
+    padding: 13px;
+    background-color: #fff;
+    color: black;
+    border: 2px solid transparent;
+}
+/* ! -------------------------------- Gamepage Layout -------------------------------- ! */
+.gamepage-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.gamemap-locations {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.gamepage-userinformation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.gamepage-userprofilepicture {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.gamepage-username {
+    color: var(--pale-white-txt);
+}
+/* ! -------------------------------- Building and userinfo -------------------------------- ! */
+.building {
+    display: flex;
+    position: absolute;
+}
+.buildings1 {
+    top: 40px;
+    right: 10px;
+}
+.buildings2 {
+    top: 300px;
+    left: 40px;
+}
+.buildings3 {
+    top: 50px;
+    left: 40%;
+}
+.buildings4 {
+    top: 800px;
+    right: 30%;
+}
+.buildings5 {
+    top: 60px;
+    left: 150px;
+}
+.buildings6 {
+    top: 300px;
+    left: 70%;
+}
+.buildings7 {
+    bottom: 100px;
+    left: 10px;
+}
+.buildings8 {
+    right: 100px;
+    bottom: 100px;
+}
+.buildings9 {
+    top: 750px;
+    left: 750px;
+}
+.buildings10 {
+    top: 450px;
+    left: 650px;
+}
+/* ! -------------------------------- Building boxes -------------------------------- ! */
+.gamepage-buildingboxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #0f0;
+}
+.gamepage-buildingboxes1 {
+    width: 200px !important;
+    height: 250px !important;
+    background-color: rgb(155, 0, 0) !important;
+}
+.gamepage-buildingboxes2 {
+    width: 100px !important;
+    height: 150px !important;
+    background-color: rgb(109, 109, 109) !important;
+}
+.gamepage-buildingboxes3 {
+    width: 300px !important;
+    height: 100px !important;
+    background-color: rgb(0, 196, 153) !important;
+}
+.gamepage-buildingboxes4 {
+    width: 150px !important;
+    height: 150px !important;
+    background-color: rgb(0, 243, 93) !important;
+}
+.gamepage-buildingboxes5 {
+    width: 220px !important;
+    height: 100px !important;
+    background-color: rgb(71, 0, 163) !important;
+}
+.gamepage-buildingboxes6 {
+    width: 150px !important;
+    height: 160px !important;
+    background-color: rgb(230, 0, 0) !important;
+}
+.gamepage-buildingboxes7 {
+    width: 300px !important;
+    height: 300px !important;
+    background-color: rgb(0, 61, 48) !important;
+}
+.gamepage-buildingboxes8 {
+    width: 130px !important;
+    height: 400px !important;
+    background-color: rgb(20, 175, 0) !important;
+}
+.gamepage-buildingboxes9 {
+    width: 150px !important;
+    height: 190px !important;
+    background-color: rgb(70, 5, 100) !important;
+}
+.gamepage-buildingboxes10 {
+    width: 210px !important;
+    height: 150px !important;
+    background-color: rgb(0, 48, 37) !important;
+}
+/* ! -------------------------------- ChatBox -------------------------------- ! */
+.chat-container{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 35%;
+    height: 30%;
+    z-index: 998;
+    border: 1px solid #fff;
+}
+.chat-massagedisplay{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid #00f;
+    width: 100%;
+    height: 100%;
+}
+.chat-massagedisplay-box{
+    flex: none;
+    width: 100%;
+    height: 20%;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    border: 1px solid #f0f;
+}
+.chat-usermassage{
+    color: #fff;
+}
+.chat-massageinputform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 50px;
+    z-index: 9999;
+    border: 1px solid #ff0000;
+    margin-top: auto;
+}
+.chat-massageinput{
+    width: 95%;
+    height: 45px;
+    font-size: 1.3rem;
+}
+.chat-massagesubmit{
+    width: 5%;
+    height: 45px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
