@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Mafia Game</title>
       <!-- ! ------------------------------ CSS links ------------------------------ ! -->
-      <link href="assest/style/style.css" rel="stylesheet" />
+      <link href="style/style.css" rel="stylesheet" />
       <!-- ! ------------------------------ Favicon ------------------------------ ! -->
       <link rel="shortcut icon" type="image/jpg" href="resource/images/favicon/favicon.png"/>
       <link href="assest/resource/images/favicon/Braingame-Favicon.png" rel="shortcut icon" />
@@ -15,7 +15,7 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
       <!-- ! ------------------------------ Libraries ------------------------------ ! -->
-      <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
+      <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
    </head>
 <div class="container">
  <body>
@@ -26,13 +26,13 @@
               <a href="https://www.linkedin.com/in/iricge/" target="_blank" class="authorsocials-linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
               <a href="https://github.com/iricge" target="_blank" class="authorsocials-github"><i class="fa-brands fa-github"></i></a>
            </div>
-   </header>
+    </header>
   <!-- ! ------------------------------ Main (Game Menu Container and Buttons & Users Profile) ------------------------------ ! -->
    <main> 
      <section class="gamemenu">
            <section class="gamemenu-btns">
            <!-- ! ------------------------------ Userprofile Information ------------------------------ ! -->
-            <!-- <article class="gamemenu-userprofile">
+            <article class="gamemenu-userprofile">
                <div class="userprofile-details">
                   <div class="userprofile-profilepicture">
                     <img src="assest/resource/images/thumbnails/image.jpg" class="profile-picture" alt="Userprofile pictue">
@@ -41,7 +41,7 @@
                   </di v>
                   <h3 class="userprofile-username">Iric gorgi</h3>
                </div>
-              </article> -->
+              </article>
               <!-- ! ------------------------------ Buttons ------------------------------ ! -->
               <button data-aos="fade-left" data-aos-delay="150" class="gamemenu-btn gamemenu-playbtn"><a href="assest/pages/gamepage.html">Play</a></button>
               <button data-aos="fade-left" data-aos-delay="250" class="gamemenu-btn gamemenu-playonlinebtn">Play Online</button>
@@ -55,11 +55,11 @@
       </div> 
    </div>
          <!-- ! ------------------------------ Scripts ------------------------------ ! -->
-         <script src="assest/scripts/gamemenu.js"></script>
-         <script src="assest/scripts/uploadimage.js"></script>
+         <!-- <script src="scripts/index.js"></script> -->
+         <script src="scripts/uploadimage.js"></script>
          <!-- ! ------------------------------ library Scripts ------------------------------ ! -->
          <script src="https://kit.fontawesome.com/9c345a79fa.js" crossorigin="anonymous"></script>
-         <script src="node_modules/aos/dist/aos.js"></script>
+         <script src="../node_modules/aos/dist/aos.js"></script>
          <script>
           AOS.init({
               startEvent: 'DOMContentLoaded'
